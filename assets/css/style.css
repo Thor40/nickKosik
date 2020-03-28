@@ -30,20 +30,24 @@ header {
 header h1{
     font-weight: 300px;
     font-size: 36px;
-    color: #191716;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding-left: 0px;
-    display: flex;
-    align-content: flex-start;
-    padding-right: 30px;
 }
 
 header a {
     text-decoration: none;
     color: #191716;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #191716;
     padding: 20px;
-    background-color: rgba(98, 66, 9, .2);
     border-radius: 15px;
+}
+
+header nav {
+    margin: 7px 30px;
 }
 
 header nav ul {
@@ -53,3 +57,23 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
+
+header nav ul li a {
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: rgb(189, 127, 12);
+    margin: 50px 50px;
+    padding: 5px 20px;
+    border-bottom: rgba(65, 68, 78, 0.5) solid;
+}
+
+header nav ul li a:hover {
+    background: rgba(65, 68, 78, 0.5);
+    color: rgba(255, 255, 255, 0.849);
+    border-radius: 50px ;
+    border-bottom: 0px;
+}
+
+/* HEADER END */
+/* HERO START */
