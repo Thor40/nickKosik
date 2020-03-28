@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER START */
+header {
+    padding: 30px 30px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-img.jpg");
+    background-size: 100%;
+    background-position: right bottom center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 9999;
+    align-items: baseline;
+}
+
+header h1{
+    font-weight: 300px;
+    font-size: 36px;
+    color: #191716;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-left: 0px;
+    display: flex;
+    align-content: flex-start;
+    padding-right: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: #191716;
+    padding: 20px;
+    background-color: rgba(98, 66, 9, .2);
+    border-radius: 15px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
