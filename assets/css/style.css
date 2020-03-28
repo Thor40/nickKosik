@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root {
+    --primary-color:rgb(24, 9, 8);
+    --secondary-color: #CDCDCD;
+    --tertiary-color: rgb(145, 64, 21);
+    --body: rgb(240, 240, 240);
+}
 body {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body);
 }
 
 /* HEADER START */
@@ -36,12 +42,12 @@ header h1{
 
 header a {
     text-decoration: none;
-    color: #191716;
+    color: var(--primary-color);
 }
 
 header h1 a {
     text-decoration: none;
-    color: #191716;
+    color: var(--primary-color);
     padding: 20px;
     border-radius: 15px;
 }
@@ -62,7 +68,7 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: rgb(189, 127, 12);
+    color: var(--tertiary-color);
     margin: 50px 50px;
     padding: 5px 20px;
     border-bottom: rgba(65, 68, 78, 0.5) solid;
@@ -76,4 +82,52 @@ header nav ul li a:hover {
 }
 
 /* HEADER END */
+section {
+    padding: 60px;
+}
 /* HERO START */
+.hero {
+    padding: 300px;
+    background-image: url(../images/hero-img.jpg);
+    background-size: cover;
+    background-position: bottom 50%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.hero div h2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+/* HERO END */
+/* ABOUT ME START */
+.section-title {
+    font-size: 48px;
+    color: var(--primary-color);
+    padding-bottom: 20px;
+    text-align: left;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.primary-border {
+    border-left: 3px solid;
+}
+.abm {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+
+.abm-p {
+    margin: 15px 40px; 
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+/* ABOUT ME END */
