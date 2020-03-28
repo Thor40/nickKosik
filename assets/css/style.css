@@ -10,7 +10,7 @@
     --body: rgb(240, 240, 240);
 }
 body {
-    color: red;
+    color: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--body);
 }
@@ -83,7 +83,7 @@ header nav ul li a:hover {
 
 /* HEADER END */
 section {
-    padding: 60px;
+    padding: 60px 0;
 }
 /* HERO START */
 .hero {
@@ -131,3 +131,64 @@ section {
 }
 
 /* ABOUT ME END */
+.section-title2 {
+    font-size: 60px;
+    color: var(--primary-color);
+    padding-bottom: 20px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.secondary-border {
+    border-right: 3px solid;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.work-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.work-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: stretch;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    border: 2px solid var(--primary-color);
+}
+
+.work-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
+.work-grid-item.box1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 3;
+}
+/* ABOUT ME END */
+/*CONTACT ME START */
+.contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+
+.contact-li {
+    margin: 15px 40px; 
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
