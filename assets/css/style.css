@@ -6,7 +6,7 @@
 :root {
     --primary-color:rgb(24, 9, 8);
     --secondary-color: #CDCDCD;
-    --tertiary-color: rgb(145, 64, 21);
+    --tertiary-color: rgb(90, 185, 165);
     --body: rgb(240, 240, 240);
 }
 body {
@@ -105,12 +105,11 @@ section {
 /* HERO END */
 /* ABOUT ME START */
 .section-title {
-    font-size: 48px;
+    font-size: 60px;
     color: var(--primary-color);
     padding-bottom: 20px;
-    text-align: left;
-    margin: 0 auto;
     width: 25%;
+    padding-right: 12%;
 }
 
 .primary-border {
@@ -128,13 +127,15 @@ section {
     text-align: right;
     display: flex;
     align-items: center;
+    padding-left: 10%;
+padding-right: 10%;
 }
 
 /* ABOUT ME END */
 .section-title2 {
-    font-size: 60px;
+    font-size: 90px;
     color: var(--primary-color);
-    padding-bottom: 20px;
+    padding-right: 20px;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
@@ -199,7 +200,10 @@ section {
     grid-row: 3 / span 2;
     background-image: url(../images/under-c-wide.jpg);
     background-repeat: no-repeat;
-    background-size: auto
+    background-size: auto;
+    color: var(--primary-color);
+    font-size: 40px;
+    text-align: justify;
 }
 
 .work-grid-item.box4 {
@@ -209,6 +213,9 @@ section {
     background-image: url(../images/under-c-wide.jpg);
     background-repeat: no-repeat;
     background-size: auto
+    color: var(--primary-color);
+    font-size: 40px;
+    text-align: justify;
     
 }
 
@@ -219,6 +226,9 @@ section {
     background-image: url(../images/under-c-wide.jpg);
     background-repeat: no-repeat;
     background-size: auto
+    color: var(--primary-color);
+    font-size: 40px;
+    text-align: justify;
 }
 
 .work-title {
@@ -235,16 +245,142 @@ section {
 
 /* ABOUT ME END */
 /*CONTACT ME START */
-.contact {
+footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-content: stretch;
+    padding: 60px 0;
 }
 
-.contact-li {
-    margin: 15px 40px; 
-    text-align: right;
+.section-title-footer {
+    font-size: 48px;
+    color: var(--primary-color);
+    padding-bottom: 20px;
+    width: 25%;
+    justify-content: flex-start;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+footer h1 a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+footer ul {
+    padding-top: 8%;
     display: flex;
-    align-items: center;
+    list-style: none;
+}
+
+footer ul li a {
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 50px 50px;
+    padding: 5px 20px;
+    border-bottom: rgba(65, 68, 78, 0.5) solid;
+}
+
+footer ul li a:hover {
+    background: rgba(65, 68, 78, 0.5);
+    color: rgba(255, 255, 255, 0.849);
+    border-radius: 50px ;
+    border-bottom: 0px;
+}
+/* CONTACT ME END */
+/* MEDIA QUERIES START */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        font-size: 60px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer {
+        flex: 0 50%
+    }
+
+    .section-title {
+        width: auto;
+    }
+
+    .section-title-footer{
+        flex: 0 50%
+    }
+    footer ul {
+        flex-direction: column;
+    }
+    
+    footer li {
+        margin: 15px 30px 15px;
+    }
+    footer ul li a {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-flow: column wrap;
+    }
+
+    header nav ul li a {
+        font-size: 40px;
+    }
+    .work-title{
+        font-size: 20px;
+    }
+
+    .section-title {
+        width: auto;
+    }
+    .section-title-footer{
+        flex: 0 10%
+    }
+
+    .f-nav {
+        justify-content: flex-end;
+    }
+
+    footer ul li {
+        font-size: 60px;
+    }
+
+    footer ul li a {
+        font-size: 20px;
+    }
 }
