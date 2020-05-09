@@ -198,7 +198,7 @@ padding-right: 10%;
     height: 100px;
     grid-column: 1 / span 1;
     grid-row: 3 / span 2;
-    background-image: url(../images/under-c-wide.jpg);
+    background-image: url(../images/runB.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     color: var(--primary-color);
@@ -212,7 +212,7 @@ padding-right: 10%;
     grid-row: 3 / span 2;
     background-image: url(../images/under-c-wide.jpg);
     background-repeat: no-repeat;
-    background-size: auto
+    background-size: auto;
     color: var(--primary-color);
     font-size: 40px;
     text-align: justify;
@@ -237,6 +237,15 @@ padding-right: 10%;
     display: flex;
     align-items: center;
     color: var(--secondary-color);
+    background-color: rgba(240, 240, 240, .2);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#repo-text {
+    display: flex;
+    align-items: center;
     background-color: rgba(240, 240, 240, .2);
     border-radius: 15px;
     font-weight: bold;
